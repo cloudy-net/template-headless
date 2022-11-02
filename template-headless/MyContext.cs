@@ -6,6 +6,6 @@ namespace template_headless
     {
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
-        public DbSet<Book> Books { get; set; }
+        public DbSet<Book> Books => Set<Book>();
     }
 }
